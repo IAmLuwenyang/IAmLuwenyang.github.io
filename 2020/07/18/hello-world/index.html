@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Hello World, Hexo">
+    <meta name="keywords" content="记录第一篇博客搭建的全过程, Hexo">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Hello World | Hexo</title>
+    <title>记录第一篇博客搭建的全过程 | Hexo</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -308,12 +308,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/12.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/13.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Hello World</h1>
+                    <h1 class="description center-align post-title">记录第一篇博客搭建的全过程</h1>
                 </div>
             </div>
         </div>
@@ -459,18 +459,56 @@
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+<h4 id="一、安装环境"><a href="#一、安装环境" class="headerlink" title="一、安装环境"></a>一、安装环境</h4><p>​        在安装 hexo 前需要准备 node.js 环境，在<code>CMD</code>下使用 node -v 可以查看 node 的版本信息，在node.js官网 <a href="https://nodejs.org/en/" target="_blank" rel="noopener">https://nodejs.org/en/</a> 中选择 LTS 下载安装即可。之后需要安装 cnpm 环境，安装命令为 npm install -g cnpm –registry=<a href="https://registry.npm.taobao.org，使用" target="_blank" rel="noopener">https://registry.npm.taobao.org，使用</a> cnpm -v 命令查看版本，环境搭建完成后就可以开始 hexo 博客的搭建步骤了，如下所示：</p>
+<ul>
+<li><p>安装 hexo：<code>cnpm install -g hexo-cli</code>；</p>
+</li>
+<li><p>创建博客文件夹：如 <code>E:/codecat/blog</code>；</p>
+</li>
+<li><p>切换路径：<code>cd E:/codecat/blog</code>；</p>
+</li>
+<li><p>初始化 hexo：<code>hexo init</code>；</p>
+</li>
+<li><p>启动 hexo 服务：<code>hexo s</code>；</p>
+<ul>
+<li>启动后可以在本地的 4000 端口访问查看</li>
+</ul>
+</li>
+<li><p>部署到远端(Github)</p>
+<ul>
+<li><p>安装插件：<code>cnpm install --save hexo-deployer-git</code>；</p>
+</li>
+<li><p>配置 <code>_config.yml</code> 文件，其中IAmLuwenyang.github.io.git为Github创建的repository名称；</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Deployment</span></span><br><span class="line"><span class="comment">## Docs: https://hexo.io/docs/deployment.html</span></span><br><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">'git'</span></span><br><span class="line">  <span class="attr">repo:</span> <span class="string">https://github.com/IAmLuwenyang/IAmLuwenyang.github.io.git</span></span><br><span class="line">  <span class="attr">branch:</span> <span class="string">master</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>部署到Github中，<code>hexo d</code>。</p>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="二、更换hexo主题"><a href="#二、更换hexo主题" class="headerlink" title="二、更换hexo主题"></a>二、更换hexo主题</h4><p>​        推荐几款主题，喜欢的可以去对应的Github网址上访问下载。</p>
+<ul>
+<li><p>butterfly主题</p>
+<p><img src="image-20200718212926602.png" alt="image-20200718212926602"></p>
+</li>
+<li><p>matery主题，一个基于材料设计和响应式设计而成的全面、美观的Hexo主题，<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank" rel="noopener">https://github.com/blinkfox/hexo-theme-matery</a> ；</p>
+<p><img src="image-20200718213026206.png" alt="image-20200718213026206"></p>
+</li>
+<li><p>yilia主题，一个简洁优雅的hexo主题，<a href="https://github.com/litten/hexo-theme-yilia" target="_blank" rel="noopener">https://github.com/litten/hexo-theme-yilia</a> ;</p>
+</li>
+</ul>
+<p>​        下载主题，以yilia为例，在命令行输入 <code>git clone https://github.com/blinkfox/hexo-theme-matery.git themes/yilia</code>下载，完成后需要修改 <code>_config.yml</code> 中的配置，如 <code>theme: matery</code>，完成后执行如下命令：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo g</span><br><span class="line">hexo s</span><br><span class="line"><span class="comment"># 在本地端口4000，http://localhost:4000可以预览效果</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 推送到Github</span></span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+
+<h4 id="三、快速开始"><a href="#三、快速开始" class="headerlink" title="三、快速开始"></a>三、快速开始</h4><p>​        如何写另一篇博客，需要在命令行输入：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new &quot;SpringBoot的魅力&quot;</span><br></pre></td></tr></table></figure>
+
+<p>​        更多详细信息访问：<a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">https://hexo.io/docs/writing.html</a> 。</p>
+<h4 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h4><p>​        搭建过程中所有的命令行操作都在 Git Bash 中完成，因此需要提前下载安装 Git 环境。</p>
 
             </div>
             <hr/>
@@ -708,9 +746,9 @@
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
+                        <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="记录第一篇博客搭建的全过程">
                         
-                        <span class="card-title">Hello World</span>
+                        <span class="card-title">记录第一篇博客搭建的全过程</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -746,9 +784,9 @@
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
+                        <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="记录第一篇博客搭建的全过程">
                         
-                        <span class="card-title">Hello World</span>
+                        <span class="card-title">记录第一篇博客搭建的全过程</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
