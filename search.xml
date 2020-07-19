@@ -100,6 +100,16 @@
 
 
 
+<h5 id="1-4-增加about简介页"><a href="#1-4-增加about简介页" class="headerlink" title="1.4 增加about简介页"></a>1.4 增加about简介页</h5><ul>
+<li><p>生成文件</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexo new page &quot;about&quot;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>然后修改所用主题目录下的<code>_config.yml</code>文件，将<code>menu</code>中<code>about</code>前的注释去掉。</p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">menu:</span></span><br><span class="line">  <span class="attr">home:</span>  <span class="string">/</span> <span class="string">||</span> <span class="string">home</span></span><br><span class="line">  <span class="attr">about:</span>  <span class="string">/about/</span> <span class="string">||</span> <span class="string">user</span></span><br><span class="line">  <span class="attr">tags:</span>  <span class="string">/tags/</span> <span class="string">||</span> <span class="string">tags</span></span><br><span class="line">  <span class="string">...</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>然后修改<code>source/about/</code>目录中的<code>index.md</code>文件即可。</p>
+</li>
+</ul>
 <h4 id="2-美化配置"><a href="#2-美化配置" class="headerlink" title="2.美化配置"></a>2.美化配置</h4><h5 id="2-1-主题样式更改"><a href="#2-1-主题样式更改" class="headerlink" title="2.1 主题样式更改"></a>2.1 主题样式更改</h5><p>编辑修改<strong>主题配置</strong>文件，如下所示：</p>
 <figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 设置主题Schemes</span></span><br><span class="line"><span class="comment">#scheme: Muse</span></span><br><span class="line"><span class="comment">#scheme: Mist</span></span><br><span class="line"><span class="comment">#scheme: Pisces</span></span><br><span class="line"><span class="attr">scheme:</span> <span class="string">Gemini</span></span><br></pre></td></tr></table></figure>
 
